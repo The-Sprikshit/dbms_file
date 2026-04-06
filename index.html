@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DBMS Practice – SQL Questions</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-header">
+  <h1>📚 DBMS Practice Questions</h1>
+  <p>SQL Practice Set — All Chapters</p>
+  <div class="header-stats">
+    <span class="stat-pill">12 Chapters</span>
+    <span class="stat-pill">480+ Questions</span>
+    <span class="stat-pill">Click to Reveal Answers</span>
+  </div>
+</div>
+
+<div class="main-container">
+
+  <!-- HOME PAGE -->
+  <div id="home">
+    <div class="chapters-grid" id="chaptersGrid"></div>
+  </div>
+
+  <!-- QUESTION PAGE -->
+  <div id="question-page">
+    <div class="qp-topbar">
+      <button class="back-btn" onclick="showHome()">← Back</button>
+      <span class="qp-title" id="qpTitle"></span>
+      <span class="qp-count-badge" id="qpBadge"></span>
+    </div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search questions…" oninput="filterQuestions()">
+    </div>
+    <div class="q-list" id="questionList"></div>
+    <div class="no-results" id="noResults" style="display:none">No questions match your search.</div>
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
